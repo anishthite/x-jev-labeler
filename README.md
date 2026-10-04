@@ -4,13 +4,14 @@ A zero-build Chrome extension that checks visible X posts against a prompt using
 
 ## Install
 
-1. Open `chrome://extensions` and enable **Developer mode**.
-2. Click **Load unpacked** and select this `x-jev-labeler` folder.
-3. Choose one API-key source:
+1. Download and unzip `jev-labels-for-x-1.0.0.zip` from the [latest release](https://github.com/anishthite/x-jev-labeler/releases/latest), or clone this repository.
+2. Open `chrome://extensions` and enable **Developer mode**.
+3. Click **Load unpacked** and select the unzipped `x-jev-labeler` folder.
+4. Choose one API-key source:
    - Copy `config.example.js` to `config.local.js`, add `openRouterApiKey`, then reload the extension. The local config is ignored by Git.
    - Or paste an OpenRouter API key into the extension popup. It overrides `config.local.js` and is stored in `chrome.storage.local` for this Chrome profile.
-4. Set a badge label and prompt, then enable it.
-5. Open X and click **Run visible posts**. New timeline posts are checked while enabled.
+5. Set a badge label and prompt, then enable it.
+6. Open X and click **Run visible posts**. New timeline posts are checked while enabled.
 
 The extension sends post text, author text, and URL to OpenRouter to obtain each decision.
 
