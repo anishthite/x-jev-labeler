@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="popup.css"><title>Jev Labels</title></head>
+<body>
+  <main>
+    <h1>Jev Labels <span>for X</span></h1>
+    <p class="hint">Classify posts currently visible on X. New posts are checked while enabled.</p>
+    <label>OpenRouter API key <small>(optional; overrides config.local.js)</small><input id="apiKey" type="password" placeholder="sk-or-v1-…" autocomplete="off"></label>
+    <label>Label<input id="label" type="text" placeholder="Worth reading" maxlength="40"></label>
+    <label>Prompt<textarea id="prompt" rows="4" placeholder="Example: Is this a practical insight about building AI products?"></textarea></label>
+    <div class="actions"><label class="switch">Enabled <input id="enabled" type="checkbox"><span></span></label><button id="run" type="button">Run visible posts</button></div>
+    <p id="status" role="status"></p>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
